@@ -1,0 +1,38 @@
+---
+import GitHub from '../components/icons/GitHubIcon.astro';
+import LinkedingIcon from '../components/icons/LinkedingIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
+---
+<div class="max-w-xl">
+    <div class="flex gap-4 mb-4">
+        <img class="rounded-full shadow-lg size-16" src="/yo.jpg" alt="maxi photo" />
+    </div>  
+        <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+            Hey, soy Maxi</h1>
+        <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300">
+            {Math.floor((new Date().getTime() - new Date('2023-8-01').getTime()) / (1000 * 60 * 60 * 24 * 365.25))}+ 
+            años de experiencia. 
+            <span class="text-[var(--primary-color)]">Desarrollador Web</span>. 
+            De San Juan, Argentina. Mi enfoque es crear aplicaciones web que combinan funcionalidad con experiencias de usuario.
+        </p>
+        <nav class="flex flex-wrap gap-3 gap-y-2 md:gap-x-4 mt-8">            
+            <SocialPill href="https://www.linkedin.com/in/maxiolmosbazan/" isExternal={true}>
+                <LinkedingIcon slot="icon" class="size-4 md:size-6"/>
+                Linkedin
+            </SocialPill>
+
+            <SocialPill href="https://github.com/maintres" isExternal={true}>
+                <GitHub slot="icon" class="size-4 md:size-6"/>
+                GitHub
+            </SocialPill>
+            <SocialPill 
+                href="#" 
+                isExternal={false}
+                onclick="navigator.clipboard.writeText('maxiolmos1993@gmail.com'); const toast = document.createElement('div'); toast.textContent = 'Email copiado!'; toast.style = 'position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px; transition: opacity 0.3s'; document.body.appendChild(toast); setTimeout(() => toast.style.opacity = '0', 2000); setTimeout(() => toast.remove(), 2300);">
+                <MailIcon slot="icon" class="size-4 md:size-6"/>
+                maxiolmos1993@gmail.com
+            </SocialPill>  
+        </nav>    
+    
+</div>

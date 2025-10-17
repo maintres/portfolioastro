@@ -1,11 +1,39 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
+import Experience from '../components/Experience.astro';
+import BriefcaseIcon from '../components/icons/BriefcaseIcon.astro';
+import Footer from '../components/Footer.astro';
+import CodeIcon from '../components/icons/CodeIcon.astro';  
+import Proyects from '../components/Proyects.astro';
+import Hero from '../components/Hero.astro';
+import AboutMe from '../components/AboutMe.astro';
+import ProfileCheck from "../components/icons/ProfileCheck.astro"
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Porfolio de Maxi Olmos - Desarrollador Web">
+<main class="px-4">
+    <section class="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl py-16 md:py-36">
+        <Hero />
+        <h2 id="experiencia" class="text-white text-4xl md:text-3xl font-bold mt-20 md:mt-30 flex items-center gap-x-2">
+            <BriefcaseIcon slot="icon" class="size-7"/>
+            <span class="text-2xl lg:text-4xl md:text-3xl">Experiencia Profesional</span>
+        </h2>
+        <Experience />
+
+        <h2 id="proyectos" class="text-white text-4xl md:text-3xl font-bold mt-10 md:mt-30 flex items-center gap-x-2">
+            <CodeIcon slot="icon" class="size-7"/>
+            <span class="text-2xl lg:text-4xl md:text-3xl">Proyectos</span>
+        </h2>
+        <Proyects />
+        <h2 id="sobre-mi" class="text-white text-4xl md:text-3xl font-bold mt-10 md:mt-30 flex items-center gap-x-2">
+            <ProfileCheck slot="icon" class="size-7"/>
+            <span class="text-2xl lg:text-4xl md:text-3xl">Sobre mí</span>
+        </h2>
+        <AboutMe />
+    </section>
+    <Footer />
+</main>
 </Layout>

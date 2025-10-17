@@ -1,0 +1,54 @@
+---
+import proyectosData from '../data/proyectos.json' with { type: "json" };
+import SocialPill from './SocialPill.astro';
+import GitHub from './icons/GitHubIcon.astro';
+import Link from './icons/Link.astro';
+const proyectos = proyectosData;
+---
+<div class="flex flex-col gap-y-16">
+    {
+      proyectos.map(({ title, description, tags, url, github, images }) => (
+        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+          <div class="w-full md:w-1/2">
+            <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out 
+            transform shadow-xl overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+              <img 
+                alt={title} 
+                class="object-cover object-top w-full h-56 sm:h-full md:scale-110 " 
+                loading="lazy" 
+                src={images[0] as string} 
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 md:max-w-lg">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+              {title}
+            </h3>
+            <div class="flex flex-wrap mt-2">
+              <ul class="flex flex-wrap gap-2 mt-2">
+                {tags.map((tag) => (
+                  <li class="text-xs rounded-full border border-white/10 px-2 py-1 bg-white/10">{tag}</li>
+                ))}
+              </ul>
+              <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+              <footer class="flex items-end justify-start mt-4 gap-x-4">
+                {github && (
+                  <SocialPill href={github}>
+                    <GitHub class="size-6" />
+                    Code
+                  </SocialPill>
+                )}
+                {url && (
+                  <SocialPill href={url}>
+                    <Link class="size-4" />
+                    Preview
+                  </SocialPill>
+                )}
+              </footer>
+            </div>
+          </div>
+        </article>
+      ))
+    }
+</div>

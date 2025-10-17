@@ -1,0 +1,24 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import experiencia from "../data/experiencia.json"
+
+type Experience = {
+  title: string;
+  description: string;
+  date: string;
+  url?: string;
+  employer?: string;
+}
+
+const experiences = experiencia as Experience[]
+---
+
+<ol class="relative mt-16">
+  {
+    experiences.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

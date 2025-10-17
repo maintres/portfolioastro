@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Proyecto 1",
+        "description": "Descripción del proyecto 1",
+        "url": "https://www.google.com",
+        "tags": ["HTML","CSS","JavaScript","React","Node.js","MongoDB"],
+        "images": [
+            "https://www.google.com/image.jpg",
+            "https://www.google.com/image.jpg",
+            "https://www.google.com/image.jpg"
+        ],
+        "github": "https://github.com/user/project"
+    },
+    {
+        "title": "Audiograma",
+        "description": "Audiograma es una aplicación web que permite a los usuarios crear y compartir audios.",
+        "url": "https://www.google.com",
+        "tags": ["HTML","CSS","JavaScript","React","Node.js","MongoDB"],
+        "images": [
+            "/projects/Audiograma.jpg"
+        ],
+        "github": "https://github.com/user/project"
+    }
+]
