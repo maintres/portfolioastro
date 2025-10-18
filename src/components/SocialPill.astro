@@ -9,9 +9,9 @@ const { href, isExternal = true, onclick } = Astro.props;
 
 <a href={href} 
 class="rounded-full border border-white/10 flex justify-center items-center 
-gap-x-2 py-2 px-3 md:px-4 my-2 md:my-4
+gap-x-2 py-2 px-3 md:px-4 my-1 md:my-2
 bg-white/5 hover:bg-white/10 hover:scale-105 transition-all duration-300 
-text-sm md:text-base"
+text-sm md:text-base whitespace-nowrap"
 onclick={onclick}
 target={isExternal ? "_blank" : "_self"}
 rel={isExternal ? "noopener noreferrer" : ""}
