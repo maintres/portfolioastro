@@ -1,24 +1,54 @@
 [
     {
-        "title": "Proyecto 1",
-        "description": "Descripción del proyecto 1",
+        "title": "Sistema Integral de Gestión Penitenciaria",
+        "description": "Solución tecnológica innovadora que moderniza el proceso de registro y seguimiento de personas privadas de la libertad. Implementa controles de seguridad avanzados y optimiza la gestión administrativa.",
         "url": "https://www.google.com",
-        "tags": ["HTML","CSS","JavaScript","React","Node.js","MongoDB"],
+        "tags": ["PHP","MySQL","CSS","JavaScript","Bootstrap"],
         "images": [
-            "https://www.google.com/image.jpg",
-            "https://www.google.com/image.jpg",
-            "https://www.google.com/image.jpg"
+            "/projects/servicio.jpg"
         ],
-        "github": "https://github.com/user/project"
+        "github": "https://github.com/maintres/SPP.git"
     },
     {
-        "title": "Audiograma",
-        "description": "Audiograma es una aplicación web que permite a los usuarios crear y compartir audios.",
-        "url": "https://www.google.com",
-        "tags": ["HTML","CSS","JavaScript","React","Node.js","MongoDB"],
+        "title": "Sistema de Audiometría Digital",
+        "description": "Aplicación web para la gestión y registro de audiometrías, permitiendo la creación y visualización de audiogramas de manera interactiva.",
+        "url": "https://maintres.github.io/audiograma/",
+        "tags": ["JavaScript","CSS","Bootstrap","Chart.js","SVG"],
         "images": [
-            "/projects/Audiograma.jpg"
+            "/projects/audiograma2.jpg"
         ],
-        "github": "https://github.com/user/project"
+        "github": "https://github.com/maintres/audiograma.git"
+    },
+    {
+        "title": "Odontograma Digital Interactivo",
+        "description": "Herramienta que transforma la gestión dental digital. Permite a los odontólogos documentar y visualizar el estado bucal de los pacientes, mejorando la calidad del diagnóstico y seguimiento",
+        "url": "https://maintres.github.io/odontograma/",
+        "tags": ["JavaScript","CSS","Bootstrap","Figma","SVG"],
+        "images": [
+            "/projects/odontograma.jpg"
+        ],
+        "github": "https://github.com/maintres/odontograma.git"
+    }
+    ,
+    {
+        "title": "Sistema Interactivo de Mapeo Corporal",
+        "description": "Innovadora herramienta de visualización anatómica que permite el registro preciso y detallado de marcas corporales. Integra una interfaz intuitiva con capacidades avanzadas de exportación de datos.",
+        "url": "https://maintres.github.io/PartesCuerpo/",
+        "tags": ["JavaScript","Bootstrap","SVG","JSON","Figma","APIs"],
+        "images": [
+            "/projects/partescuerpo.jpg"
+        ],
+        "github": "hhttps://github.com/maintres/PartesCuerpo.git"
+    }
+    ,
+    {
+        "title": "E-Commerce React con Firebase",
+        "description": "Aplicación de comercio electrónico moderna desarrollada con React y Firebase. Incluye navegación por categorías, carrito de compras interactivo, gestión de estado con Context API y base de datos en tiempo real.",
+        "url": "https://superlative-sunflower-6ce416.netlify.app/",
+        "tags": ["React","Firebase","Vite","CSS","React Router","JavaScript","Bootstrap"],
+        "images": [
+            "/projects/ecomerce.jpg"
+        ],
+        "github": "https://github.com/maintres/React-e-Commerce.git"
     }
 ]

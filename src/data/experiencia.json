@@ -1,21 +1,14 @@
 [
     {
-        "title": "Application UI code in Tailwind CSS",
-        "description": "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-        "date": "February 2022",
-        "url": "https://www.google.com"
+        "title": "Desarrollador Frontend", 
+        "description": "Desarrollo de soluciones digitales médicas para profesionales de la salud. Creación de odontograma digital interactivo y sistema de audiometría con generación automática de audiogramas.",
+        "employer": "Inside Dev",
+        "date": "Marzo 2025 - Agosto 2025"
     },
     {
-        "title": "Marketing UI design in Figma", 
-        "description": "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
-        "employer": "Google",
-        "date": "March 2022",
-        "url": "https://www.google.com"
-    },
-    {
-        "title": "E-Commerce UI code in Tailwind CSS",
-        "description": "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
-        "date": "April 2022",
-        "url": "https://www.google.com"
+        "title": "Desarrollador Frontend Principal", 
+        "description": "Lideré el desarrollo de un sistema integral para el registro de ingreso de personas privadas de la libertad. Implementé gestión de roles y permisos de usuarios, desarrollé herramienta especializada para registro de marcas y cicatrices, y diseñé la interfaz de usuario completa del sistema.",
+        "employer": "'Pasantía' en el servicio penitenciario de San Juan",
+        "date": "Septiembre 2024 - Marzo 2025"
     }
 ]
