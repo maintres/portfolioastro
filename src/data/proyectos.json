@@ -2,7 +2,7 @@
     {
         "title": "Sistema Integral de Gestión Penitenciaria",
         "description": "Solución tecnológica innovadora que moderniza el proceso de registro y seguimiento de personas privadas de la libertad. Implementa controles de seguridad avanzados y optimiza la gestión administrativa.",
-        "url": "https://www.google.com",
+        "url": "",
         "tags": ["PHP","MySQL","CSS","JavaScript","Bootstrap"],
         "images": [
             "/projects/servicio.jpg"
