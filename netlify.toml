@@ -5,7 +5,5 @@
 [build.environment]
   NODE_VERSION = "18"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Nota: Los archivos estáticos de public/ se sirven automáticamente
+# El archivo _redirects en public/ maneja el routing SPA
