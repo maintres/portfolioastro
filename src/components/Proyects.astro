@@ -4,14 +4,36 @@ import SocialPill from './SocialPill.astro';
 import GitHub from './icons/GitHubIcon.astro';
 import Link from './icons/Link.astro';
 const proyectos = proyectosData;
+
+// Función helper para normalizar rutas de imágenes
+// Asegura que las rutas funcionen tanto en desarrollo como en producción
+function getImagePath(imagePath: string): string {
+  const baseUrl = import.meta.env.BASE_URL || '/';
+  
+  // Si BASE_URL es solo '/', usar la ruta directamente (ya es absoluta)
+  if (baseUrl === '/') {
+    return imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
+  }
+  
+  // Normalizar BASE_URL (eliminar barra final si existe)
+  const normalizedBase = baseUrl.endsWith('/') 
+    ? baseUrl.slice(0, -1) 
+    : baseUrl;
+  
+  // Normalizar la ruta de la imagen (eliminar barra inicial si existe)
+  const normalizedPath = imagePath.startsWith('/') 
+    ? imagePath.slice(1) 
+    : imagePath;
+  
+  // Combinar BASE_URL con la ruta de la imagen
+  return `${normalizedBase}/${normalizedPath}`;
+}
 ---
 <div class="flex flex-col gap-y-16">
     {
       proyectos.map(({ title, description, tags, url, github, images }) => {
-        // Asegurar que la ruta sea absoluta
-        const imageSrc = images[0]?.startsWith('/') 
-          ? images[0] 
-          : `/${images[0]}`;
+        // Obtener la ruta normalizada de la imagen
+        const imageSrc = getImagePath(images[0] as string);
         
         return (
         <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 ">
@@ -21,7 +43,7 @@ const proyectos = proyectosData;
                 alt={title} 
                 class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
                 loading="lazy" 
-                src={imageSrc as string} 
+                src={imageSrc} 
               />
             </div>
           </div>
